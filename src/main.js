@@ -13,4 +13,8 @@ form.addEventListener("submit", (event) => {
   newList__span.textContent = form__input.value;
   newList__button.textContent = "❎";
   form__input.value = "";
+
+  newList__button.addEventListener("click", () => {
+    unorderedList.removeChild(newList);
+  });
 });
