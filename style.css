@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  /* 꼭 해줄 것!! */
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -24,6 +29,7 @@ header {
   color: white;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  /* border-radius: 30px 30px 0 0; 으로 한줄로 처리 가능 */
 }
 
 header div {
@@ -49,26 +55,34 @@ li button {
   border-style: none;
 }
 
-form {
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(to bottom right, #ddffbc, pink);
   height: 20%;
+  border-radius: 0 0 30px 30px;
 }
 
-form input {
+.footer input {
   width: 100%;
   height: 30%;
   border: 0px solid transparent;
   padding: 0;
+  outline: none;
+  /* 눌렀을 때 보이는 파란 line을 없애줌 */
 }
 
-.footer button {
-  width: 100%;
+.footer__button {
   height: 70%;
   color: white;
-  background: linear-gradient(to bottom right, #ddffbc, pink);
   border-style: none;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  transition: all 100ms ease-in;
+  background-color: transparent;
+}
+
+.footer__button:hover {
+  transform: scale(1.1);
 }

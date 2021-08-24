@@ -14,16 +14,20 @@
     <title>Shopping List App</title>
   </head>
   <body>
+    <!-- 클래스 이름을 대부분 지어 주는 것이 좋음 -->
     <div class="screen">
       <header><div>Shopping Lists</div></header>
       <ul></ul>
-      <form class="footer">
+      <footer class="footer">
         <input type="text" />
-        <button>
+        <button class="footer__button">
           <i class="fas fa-plus-circle fa-4x"></i>
         </button>
-      </form>
+      </footer>
     </div>
     <script src="src/main.js"></script>
   </body>
 </html>
+
+<!-- class를 지정할 것 ex) footer__input, footer__button -->
+<!-- 큰 단위로 먼저 생각하고 세부사항으로 들어갈 것 header, ul, footer -> input, button -->
