@@ -1,6 +1,6 @@
 const unorderedList = document.querySelector("ul");
-const form = document.querySelector("form");
-const form__input = document.querySelector("form input");
+const form = document.querySelector(".footer");
+const form__input = document.querySelector(".footer input");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
